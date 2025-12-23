@@ -1,0 +1,56 @@
+baseURL = 'https://yehhungwei.github.io/leetcode_blog/'
+languageCode = 'zh-tw'
+title = 'LeetCode 刷題筆記'
+theme = 'PaperMod'
+
+[params]
+description = "記錄 LeetCode 解題思路與心得"
+author = "Harry Yeh"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowToc = true
+TocOpen = true
+
+[params.homeInfoParams]
+Title = "歡迎來到我的 LeetCode 刷題筆記 👋"
+Content = "這裡記錄了我在 LeetCode 上解題的思路、技巧和心得分享"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/yhw/leecode/blog"
+
+[[menu.main]]
+identifier = "posts"
+name = "文章"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "標籤"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "categories"
+name = "分類"
+url = "/categories/"
+weight = 30
+
+[[menu.main]]
+identifier = "search"
+name = "搜尋"
+url = "/search/"
+weight = 40
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup.highlight]
+style = "monokai"
+lineNos = true
+lineNumbersInTable = true

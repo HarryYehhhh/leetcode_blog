@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version:*)",
+      "Bash(brew:*)",
+      "Bash(git init:*)"
+    ]
+  }
+}
