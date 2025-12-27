@@ -1,4 +1,4 @@
-baseURL = 'https://yehhungwei.github.io/leetcode_blog/'
+baseURL = 'https://HarryYehhhh.github.io/leetcode_blog/'
 languageCode = 'zh-tw'
 title = 'LeetCode 刷題筆記'
 theme = 'PaperMod'
@@ -21,7 +21,7 @@ Content = "這裡記錄了我在 LeetCode 上解題的思路、技巧和心得�
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/yhw/leecode/blog"
+url = "https://github.com/HarryYehhhh/leetcode_blog"
 
 [[menu.main]]
 identifier = "posts"

@@ -45,66 +45,23 @@ Explanation: nums[0] + nums[1] = 2 + 7 = 9
 
 ## 程式碼實作
 
-### Python
-
-```python
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # 建立 hash map 來儲存數字和索引的對應
-        num_map = {}
-
-        for i, num in enumerate(nums):
-            complement = target - num
-
-            # 檢查 complement 是否已在 map 中
-            if complement in num_map:
-                return [num_map[complement], i]
-
-            # 將當前數字和索引存入 map
-            num_map[num] = i
-
-        return []
-```
-
-### JavaScript
-
-```javascript
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-var twoSum = function(nums, target) {
-    const map = new Map();
-
-    for (let i = 0; i < nums.length; i++) {
-        const complement = target - nums[i];
-
-        if (map.has(complement)) {
-            return [map.get(complement), i];
-        }
-
-        map.set(nums[i], i);
-    }
-
-    return [];
-};
-```
-
 ### Java
 
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
+        // 建立 HashMap 來儲存數字和索引的對應
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
 
+            // 檢查 complement 是否已在 map 中
             if (map.containsKey(complement)) {
                 return new int[] { map.get(complement), i };
             }
 
+            // 將當前數字和索引存入 map
             map.put(nums[i], i);
         }
 
