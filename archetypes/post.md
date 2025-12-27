@@ -43,8 +43,3 @@ class Solution {
 
 ## TEST CASE
 
-
-
-## 相關題目
-
-- [LeetCode XXX. 題目名稱](https://leetcode.com/problems/)
